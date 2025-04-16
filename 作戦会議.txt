@@ -1,0 +1,28 @@
+main
+まーじでここの書き方わからん
+
+yearReaderで年号を受け取る
+　受け取ったものをJuboshiのメソッドで十干へ
+　受け取ったものをZodiacのメソッドで十二支へ
+これらのメソッドをサービスで動かす？
+終了後、writerのメソッドで出力
+
+どめいん
+Juboshi
+　十干の計算用
+　ゆーてzodiacReaderを10でわって余りでswitchするだけよ
+　かんたんかんたん
+Zodiac
+　十二支の計算用
+
+
+れぽじとり
+yearReader
+　scanで標準入力を受け付ける
+zodiacWriter
+　出力するものをよういする
+
+さーびす
+zodiacService
+　入力された年が不正なものかどうかだけ判断する？
+
