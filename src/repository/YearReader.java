@@ -11,19 +11,19 @@ public class YearReader {
 	}
 	//これはつまりScanner型をYearReader型に変換してんだな。うん。きっとそうだそうに違いないそうじゃなかったらもう無理
 	
-	public Integer year;
+
 	//yearを取得しに行くメソッド
-	public Integer readLine() {
+	public int readLine() {
 		System.out.println("西暦の年号を入力してください");
-		String stryear = this.scan.nextLine();
 		try {
-			year = Integer.parseInt(stryear);
-			return year;
+			return Integer.parseInt(this.scan.nextLine());
 		}catch(NumberFormatException ex) {
-			//System.out.println("入力値が不正です。");
+			System.out.println("入力値が不正です。");
 			//これはいまではない。多分。
-			year = null;
-			return year;
+			//year = null;
+			//return year;
+			throw ex;
+			//throw：エラー限定でリターンないよ！エラーだよ！って言ってくれる。
 		}
 	}
 	
